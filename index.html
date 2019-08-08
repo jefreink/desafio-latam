@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#008000" />
+	<meta name="msapplication-navbutton-color" content="#008000" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#008000" />
+    <title>Desafio Latam</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <a class="navbar-brand" href="#"><img src="assets/latam_logo.png"></a>
+        <button class="navbar-toggler" id="menu-toggle" type="button">
+                <div></div>
+                <div></div>
+                <div></div>
+        </button>
+        
+        <ul class="collapse nav navbar-collapse flex-row-reverse">
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-element="4">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-element="3">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-element="2">Equipo </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="fixed-top toggle" id="sidebar-wrapper">
+        <div class="list-group">
+            <a href="#" class="list-group-item" data-element="2">Equipo</a>
+            <a href="#" class="list-group-item" data-element="3">Blog</a>
+            <a href="#" class="list-group-item" data-element="4">Contacto</a>
+        </div>
+    </div>
+
+    <section class="section1">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/1.jpeg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/2.jpeg" alt="Chicago">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/3.jpg" alt="New York">
+                </div>
+            </div>
+
+            <div class="carousel-caption">
+                <div class="title text-uppercase">
+                    <p>Comienza una nueva vida y</p>
+                    <p>únete al mundo</p>
+                    <p>tecnológico</p>
+                </div>
+                <div class="body">
+                    <button type="button" class="btn btn-primary">Comienza acá!</button>
+                    <button type="button" class="btn btn-success">Más info</button>
+                </div>
+                <div class="footer">
+                    Hay una escasez de desarrolladores en el mundo y más aún en latinoamérica,
+                    se necesitan más desarrolladores y Tú puedes ser uno!
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section2 vertical-center container">
+        <div class="d-flex text-people">
+            <div class="col-lg-9 col-xl-12 mx-auto">
+                <h3 class="text-uppercase"> El bootcam de programación más grande de latinoamérica </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque quibusdam temporibus vitae
+                    aperiam saepe
+                    magnam delectus quidem. Eius veniam reiciendis vero suscipit, minima animi cum quidem ab
+                    necessitatibus
+                    officiis.</p>
+            </div>
+        </div>
+
+        <div class="box-people d-flex justify-content-center align-items-end">
+            <div class="col-md-9 col-lg-12 mx-auto">
+                <img src="assets/people.png" class="img-fluid" alt="">
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <section class="section3 vertical-center">
+        <div class="container">
+            <div class="col-md-9 mx-auto">
+                <h3 class="text-uppercase">solicita información e inscríbite </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam velit officiis ipsam
+                    consequuntur.
+                    Pariatur, aperiam, beatae consectetur dolor illo tempore numquam ex, a amet eum magnam repellat
+                    commodi repellendus corporis.</p>
+                <button class="btn btn-primary">Inscríbite</button>
+                <p class="pt-3">Vive la experiencia Desafío Latam!</p>
+            </div>
+        </div>
+    </section>
+    <div class="section4 vertical-center">
+        <div class="container">
+            <div class="col-lg-9 mx-auto">
+                <div class="row">
+                    <div class="col-md">
+                        <label> Contacto</label>
+                        <p class="font-weight-bold m-0">Desafío Latam</p>
+                        <p class="m-0">Ezequias Alliende 2361 </p>
+                        <p>P: +56 9 5117 7975</p>
+                        <a href="mailto:inscripciones@desafiolatam.com">inscripciones@desafiolatam.com</a>
+                    </div>
+                    <div class="col-md">
+                        <p class="mb-2">Suscribite</p>
+                        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur </p>
+                        <form onsubmit="event.preventDefault();" id="dataForm">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="email" name="email" class="form-control rounded"
+                                        placeholder="Ingresa tu email..." required>
+                                    <div class="input-group-append ml-1">
+                                        <button type="submit" class="input-group-text rounded">enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="response">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <span class="arrow"></span>
+
+    <footer>
+        <p class="text-uppercase">desafiolatam 2016 - curso fulstack g5</p>
+    </footer>
+</body>
+
+</html>

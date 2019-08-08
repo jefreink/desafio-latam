@@ -1,0 +1,437 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./mixins.scss";
+
+nav {
+    &.navbar {
+        background: transparent;
+        padding: 2rem 5rem;
+        transition: all ease .5s;
+
+        @include phone-blg {
+            padding: 2rem 3rem;
+        }
+
+        @include phone-xsm {
+            padding: 2rem 1rem;
+        }
+
+        .navbar-toggler {
+            div {
+                width: 35px;
+                height: 3px;
+                background-color: green;
+                margin: 6px 0;
+            }
+        }
+
+        .navbar-brand {
+            img {
+                width: 150px;
+                position: relative;
+                z-index: 1000;
+
+                @include phone-xsm {
+                    width: 100px;
+                }
+            }
+        }
+
+        .nav-link {
+            color: #ccc;
+            text-shadow: 1px 1px 1px #000;
+            transition: all ease 1s;
+
+            &:hover {
+                color: #fff;
+                transform: scale(1.2);
+            }
+        }
+
+        &.active {
+            background: #000;
+            padding: .5rem 5rem;
+
+            @include phone-blg {
+                padding: .5rem 3rem;
+            }
+
+            @include phone-xsm {
+                padding: .5rem 1rem;
+            }
+        }
+    }
+}
+
+.section1 {
+    min-height: 100vh;
+
+    @include phone-blg {
+        min-height: 70vh;
+    }
+
+    @include phone-sxs {
+        min-height: 50vh;
+    }
+
+    .carousel {
+        img {
+            width: 100vw;
+            height: 100vh;
+
+            @include phone-blg {
+                height: 70vh;
+            }
+
+            @include phone-sxs {
+                height: 50vh;
+            }
+        }
+
+        .carousel-caption {
+            top: 50%;
+            bottom: 0;
+            text-shadow: 1px 1px 1px #000;
+            transform: translateY(-50%);
+
+            @include phone-xs {
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            .title {
+                font-size: 3rem;
+                line-height: .8;
+
+                @include phone-lg {
+                    font-size: 2rem;
+                }
+
+                @include phone-sm {
+                    font-size: 1.5rem;
+                }
+
+                @include phone-xsm {
+                    font-size: 1.2rem;
+                }
+
+                @include phone-xs {
+                    font-size: 1rem;
+                }
+
+                @include phone-xsm {
+                    font-size: .8rem;
+                }
+            }
+
+            .body {
+                .btn {
+                    margin: 0 .5rem;
+                    font-size: 1.2rem;
+
+                    @include phone-xsm {
+                        font-size: 1rem;
+                    }
+
+                    @include phone-xs {
+                        font-size: 1rem;
+                    }
+
+                    @include phone-xsm {
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            .footer {
+                color: #fff;
+                max-width: 400px;
+                margin: 1rem auto;
+
+                @include phone-xsm {
+                    font-size: .8rem;
+                }
+
+                @include phone-xsm {
+                    font-size: .65rem;
+                }
+            }
+
+        }
+    }
+}
+
+.section2 {
+    height: 100%;
+    padding: 3rem 0 0;
+    color: #000;
+    text-align: center;
+
+    h3 {
+        color: #333;
+        font-weight: bold;
+        font-size: 2rem;
+
+        @include phone-lg {
+            font-size: 1.5rem;
+        }
+
+        @include phone-sm {
+            font-size: 1.2rem;
+        }
+
+        @include phone-xsm {
+            font-size: 1rem;
+        }
+
+    }
+
+    img {
+        max-width: 500px;
+
+        @include phone-lg {
+            max-width: 400px;
+        }
+
+        @include phone-xsm {
+            max-width: 280px;
+        }
+
+        @include phone-xxs {
+            max-width: 100%;
+        }
+    }
+
+    p {
+        padding-top: .5rem;
+        font-size: 1.2rem;
+
+        @include phone-lg {
+            font-size: 1rem;
+        }
+
+        @include phone-lg {
+            font-size: .8rem;
+        }
+    }
+
+    .text-people {
+        min-height: 10vh;
+
+        @include phone-blgm {
+            min-height: 30vh;
+        }
+
+        @include phone-xs {
+            min-height: 40vh;
+        }
+    }
+
+    .box-people {
+        height: 40vh;
+
+        @include phone-blgm {
+            min-height: 60vh;
+        }
+
+        @include phone-lg {
+            min-height: 40vh;
+        }
+
+    }
+}
+
+.section3 {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    min-height: 50vh;
+    background: #fafafa;
+    text-align: center;
+    padding: 1rem;
+
+    &.vertical-center {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    h3 {
+        color: #333;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+        @include phone-blg {
+            font-size: 1.2rem;
+        }
+
+        @include phone-sm {
+            font-size: 1rem;
+        }
+    }
+
+    p {
+        &.pt-3 {
+            margin-bottom: 0;
+        }
+
+        @include phone-blg {
+            font-size: .8rem;
+        }
+    }
+}
+
+.section4 {
+    min-height: 50vh;
+
+    @include phone-sm {
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    @include phone-sxs {
+        min-height: 30vh;
+    }
+
+    &.vertical-center {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        .input-group {
+            margin: 0 auto;
+
+            @include phone-sm {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 4rem;
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+
+        @include phone-sm {
+            font-size: 1rem;
+            text-align: center
+        }
+
+        @include phone-xs {
+            font-size: .8rem;
+        }
+    }
+}
+
+#sidebar-wrapper {
+    &.toggle {
+        margin-left: -1000%;
+    }
+
+    min-height: 100vh;
+    display: none;
+    margin-left: 0%;
+    transition: all ease.3s;
+    background: #000;
+    width: 320px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+
+
+
+    @include phone-xsm {
+        display: block;
+    }
+
+    .list-group {
+        transition: all ease .3s;
+        padding-top: 5rem;
+
+        .list-group-item {
+            background: transparent;
+            color: #fff;
+            text-decoration: none !important;
+            transition: all ease .5s;
+            position: relative;
+
+            &:hover {
+                color: green;
+
+                &::after {
+                    width: 80%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 3px;
+                background: green;
+                bottom: 0;
+                left: 20px;
+                transition: all ease .5s;
+
+            }
+        }
+    }
+
+    &.active {
+        .list-group {
+            padding-top: 3rem;
+        }
+    }
+
+}
+
+
+
+.modal {
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        border: none;
+    }
+}
+
+.arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border: 1px solid #333;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        margin-top: .8rem;
+        width: 1.4em;
+        margin-left: .50rem;
+        height: 1.4em;
+        border-top: 0.4em solid green;
+        border-right: 0.4em solid green;
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
